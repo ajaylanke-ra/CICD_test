@@ -28,6 +28,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         pip install allure-pytest
+    - name: Setup Allure TestOps
+      # You may pin to the exact commit or the version.
+      # uses: allure-framework/setup-allurectl@6878686fce27aeb6f49009173b2947a400e282b5
+      uses:  allure-framework/setup-allurectl@v1.0.0
+               
     - name: Test with pytest
       run: |
-        pytest
+        pytest -v --alluredir=report/suite
