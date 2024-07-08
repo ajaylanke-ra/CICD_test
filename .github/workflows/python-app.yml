@@ -39,4 +39,4 @@ jobs:
     #     report-dir: allure-repor
     - name: Test with pytest
       run: |
-        pytest -v 
+        pytest -v Test.py
