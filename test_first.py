@@ -1,5 +1,5 @@
 import pytest
-import allure
+# import allure
 def test_first_():
   print("This is test")
   
